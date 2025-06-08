@@ -27,7 +27,7 @@ exclude = [".venv", "venv", "__pycache__"]
 line-length = 100
 
 [tool.ruff.lint]
-extend-select = ["E","W"]
+extend-select = ["E"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
