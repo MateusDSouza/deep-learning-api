@@ -12,16 +12,16 @@ repos:
       # Run the linter.
       - id: ruff-check
         args: [ --fix ]
-        files: ^(src|tests)/.*\.py$
+        files: ^(api|tests)/.*\.py$
       # Run the formatter.
       - id: ruff-format
-        files: ^(src|tests)/.*\.py$
+        files: ^(api|tests)/.*\.py$
 
   - repo: https://github.com/RobertCraigie/pyright-python
     rev: v1.1.401
     hooks:
     - id: pyright
-      files: ^(src|tests)/.*\.py$
+      files: ^(api|tests)/.*\.py$
 
   - repo: local
     hooks:
